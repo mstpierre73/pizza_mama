@@ -42,6 +42,8 @@ namespace pizza_mama {
 
             app.UseAuthorization();
 
+            app.UseRequestLocalization("en-US", "fr-FR");
+
             app.UseEndpoints(endpoints => {
                 endpoints.MapRazorPages();
             });
