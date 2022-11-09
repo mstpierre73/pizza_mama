@@ -3,10 +3,14 @@
 @{
 }
 
+<h1>Please login</h1>
+
+@if(Model.DisplayInvalidAccountErrorMessage){
+    <div classs="alert alert-danger" role="alert">Error: This user account is invalid</div>
+}
+
 <form method="post">
 <input type="text" name="username" placeholder="Username">
 <input type="password" name="password" placeholder="Password">
 <button>Connect</button>
 </form>
-
-<p>username est admin</p>
