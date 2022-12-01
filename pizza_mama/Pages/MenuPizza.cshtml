@@ -17,11 +17,20 @@
         </div>
         
 
-        <ul>
+        <div class="menu-list">
         @foreach(var pizza in Model.Pizza) {
-            <li>@pizza.Name - @pizza.Price $</li>
+            <div class="menu-list-item">
+                <span class="menu-list-title">@pizza.Name</span>
+                    <span class="menu-list-price">@String.Format("{0:0.00}", @pizza.Price) $</span>
+                <br/>
+                <span class="menu-list-ingredient">@pizza.Ingredients</span>
+
+                @if (pizza.Vegetarian) {
+                    <span class="menu-list-badge">Vegetarian</span>     
+                }
+            </div>
         }
-        </ul>
+        </div>
 
     </body>
 </html>
