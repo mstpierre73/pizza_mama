@@ -1,9 +1,16 @@
 ﻿body {
-    background: url("/images/menu_background.jpg") no-repeat center center fixed;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url("/images/menu_background.jpg");
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     font-family: Arial;
     margin: 0px;
     color: white;
+}
+
+body.home-page {
+    background-image: url("/images/main_background.jpg");
 }
 
 #small_logo {
@@ -43,6 +50,7 @@ h1{
     font-size: 14px;
     display:block;
     margin-top: 4px;
+    width: 320px;
 }
 
 .menu-list-badge{
@@ -54,4 +62,19 @@ h1{
     padding: 3px 8px;
     display: inline-block;
     margin-top: 6px;
+}
+
+.centered{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+a.home-page{
+    color: red;
+    font-size: 18px;
+    display: block;
+    margin-top: 30px;
+    text-align: center;
 }

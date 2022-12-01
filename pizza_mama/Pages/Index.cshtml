@@ -7,12 +7,13 @@
 <html>
     <head>
         <title>Home Page</title>
+        <link rel="stylesheet" href="~/css/pizzaMenu.css" />
     </head>
 
-    <body>
-        <div class="text-center">
-            <h1 class="display-4">Pizza Maman Home Page</h1>
-            <a asp-page="MenuPizza">View Pizza Menu</a>
+    <body class="home-page">
+        <div class="centered">
+            <img src="~/images/main_logo.png"/>
+            <a class="home-page" asp-page="MenuPizza">View Menu</a>
         </div>
     </body>
 </html>
