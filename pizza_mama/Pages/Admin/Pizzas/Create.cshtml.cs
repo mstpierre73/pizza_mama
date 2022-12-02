@@ -14,9 +14,9 @@ namespace pizza_mama.Pages.Admin.Pizzas
     [Authorize]
     public class CreateModel : PageModel
     {
-        private readonly pizza_mama.Data.DataContex _context;
+        private readonly pizza_mama.Data.DataContext _context;
 
-        public CreateModel(pizza_mama.Data.DataContex context)
+        public CreateModel(pizza_mama.Data.DataContext context)
         {
             _context = context;
         }

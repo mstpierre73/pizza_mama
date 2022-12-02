@@ -29,7 +29,7 @@ namespace pizza_mama {
             using (var scope = host.Services.CreateScope()) {
                 var services = scope.ServiceProvider;
                 try {
-                    var context = services.GetRequiredService<DataContex>();
+                    var context = services.GetRequiredService<DataContext>();
                     context.Database.EnsureCreated();
                 }
                 catch (Exception ex) {

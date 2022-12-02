@@ -10,9 +10,9 @@ namespace pizza_mama.Pages
 {
     public class MenuPizzaModel : PageModel
     {
-        private readonly pizza_mama.Data.DataContex _context;
+        private readonly pizza_mama.Data.DataContext _context;
 
-        public MenuPizzaModel(pizza_mama.Data.DataContex context) {
+        public MenuPizzaModel(pizza_mama.Data.DataContext context) {
             _context = context;
         }
 
